@@ -1,5 +1,4 @@
 
-@import url(/css/mediaquery.css);
 :root {
   --color-primary-white: #fff;
   --color-primary: #d4d8d8;
@@ -47,10 +46,11 @@ html {
 
 @media only screen and (max-width: 56.25em) {
   html {
-  font-size: 50%; } }
+    font-size: 50%; } }
 @media only screen and (max-width: 31.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 50%;
+    } }
 
 
 
@@ -424,6 +424,7 @@ input[type=submit] {
 .next {
   background-color: var(--color-primary-white);
   max-width:144rem;
+  min-height: 80vh;
   grid-column: 1 / span 8;
   grid-row: 12 / span 8;  
 
@@ -645,7 +646,7 @@ input[type=submit] {
 
   display: grid;
   grid-template-columns: repeat(12, min-content);
-  grid-template-rows: repeat(14, auto);
+  grid-template-rows: repeat(12, auto);
   gap: 2rem;
 
 }
@@ -669,9 +670,13 @@ input[type=submit] {
   
   .book-session  {
     grid-column: 2 / span 3;
-    grid-row: 1 / span 7;
+    grid-row: 1 / span 5;
     background-color: rgba(255, 255, 255, 0.4);
     padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
 /*
@@ -845,21 +850,20 @@ input[type=submit] {
 
 
 .dots {
-  grid-column: 6 / span 2;
+  grid-column: 1 / span 22;
   grid-row: 12/ span 2;
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
 
 }
 
 .ul-dots  {
-  margin: 0 auto;
-}
-.ul-dots li {
   display: flex;
   justify-content: center;
-  align-content: center;
+  flex-direction:row;
+  align-items: center;
+  margin: 2rem auto;
+}
+.ul-dots li {
+ 
   width: 30px;
   height: 20px;
   list-style: none;

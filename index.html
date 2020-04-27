@@ -7,13 +7,346 @@
     <meta name="description" content=" Travel Agency flight Car Hotel">
 
     <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700|Montserrat:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style1.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <title>TranSky</title>
 </head>
     <body>
         <div class="container">
             <header class="header" id="sticky">
+                <div class="nav-top">
+                    <div class="logo">
+                        <img src="/img/logo5.png" alt="logo of the TranSky" class="logo-size">
+                    </div>
+                    <div class="login">
+                        <svg class="icon-box">
+                            <use xlink:href="img/sprite.svg#icon-add_shopping_cart"></use> 
+                        </svg>
+                        <div class="btn">
+                            <btn class="button-l">Register</btn>
+                            <btn class="button-r">Login</btn>
+                        </div>
+
+                    </div>
+                </div>
+                <nav class="nav-down">
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>Destinations</a>
+                            <ul>
+                                <li><a>Europe</a></li>
+                                <li><a>America</a></li>
+                                <li><a>Australia</a></li>
+                                <li><a>Australia</a></li>
+                                <li><a>Africa</a></li>
+                                <li><a>Asia</a></li>
+                            </ul>
+                        </li>
+                        <li class="show1"><a>Media</a>
+                            <ul>
+                                <li><a>Advertising</a></li>
+                                <li><a>Events</a></li>
+                                <li><a>News</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Contact</a>
+                            <ul>
+                                <li><a>Email</a></li>
+                                <li><a>Call Us</a></li>
+                                <li><a>Work with Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="show"><a>About</a>
+                            <ul>
+                                <li><a>Our Team</a></li>
+                                <li><a>Office</a></li>
+                                <li><a>Location</a></li>
+                                <li><a>Carrier</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <session class="from-to">
+                <div class="heading-main">
+                    <h1>Explore the beautiful of the beautiful World</h1>
+                </div>
+                <div class="from">
+                    <div class="txt">
+                            <p>from</p>
+                    </div>
+                    <form autocomplete="off" action="/action_page.php">
+                        <div class="autocomplete" style="width:200px;">
+                        <input id="myInput" type="text" name="myCountry" placeholder="Country">
+                        </div>
+                    </form>
+                    <div class="txt-1">
+                            <p>to</p>
+                    </div>
+                    <form autocomplete="off" action="/action_page.php">
+                        <div class="autocomplete" style="width:200px;">
+                        <input id="myInput" type="text" name="myCountry" placeholder="Country">
+                        </div>
+                    </form>
+                </div>
+                <div class="book">
+                    <button>Book Now</button>
+                </div>   
+            </session>
+            <session class="next">
+                <div class="getinsp">
+                    <h2>Get inspiration for your next trip</h2>
+                    <p>It's Time to Rediscovery the world, Together</p>
+                </div>
+                <div class="places">
+                    <div class="dubai-1">
+                        <div class="alltxt">
+                            <h3>Roma</h3>
+                            <p>5 night Flight 3&#42 Hotel</p>
+                            <p>£ 899</p>
+                            <button class="btb-small">Book</button>
+                        </div>
+                    </div>
+                    <div class="dubai-2">
+                        <div class="alltxt">
+                            <h3>Iceland</h3>
+                            <p>5 night Flight 3&#42 Hotel</p>
+                            <p>£ 3.199</p>
+                            <button class="btb-small">Book</button>
+                        </div>
+                    </div>
+                    <div class="dubai-3">
+                        <div class="alltxt">
+                            <h3>Dubai</h3>
+                            <p>7 night Flight 3&#42 Hotel</p>
+                            <p>£ 2.499</p>
+                            <button class="btb-small">Book</button>
+                        </div>
+                    </div>
+                    <div class="dubai-4">
+                        <div class="alltxt">
+                            <h3>India</hh3>
+                            <p>5 night Flight 3&#42 Hotel</p>
+                            <p>£ 1.450</p>
+                            <button class="btb-small">Book</button>
+                        </div>
+                    </div>
+                    <div class="dubai-5">
+                        <div class="alltxt">
+                            <h3>Paris</h3>
+                            <p>4 night Flight 3&#42 Hotel</p>
+                            <p>£ 1.299</p>
+                            <button class="btb-small">Book</button>
+                        </div>
+                    </div>
+                    <div class="dubai-6">
+                        <div class="alltxt">
+                            <h3>London</h3>
+                            <p>3 night Flight 2&#42 Hotel</p>
+                            <p>£ 1.099</p>
+                            <button class="btb-small">Book</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers">
+                    <button class="btn-medium">More Offers &#187;</button>
+                </div>
+            </session>
+            <session class="pointer">
+                <div class="book-session">
+                    <form action="#" class="form">
+                        <div class="title-medium">
+                            <h2 class="heading-secondary">
+                                Book Your Stay
+                            </h2> 
+                        </div>
+                        <div class="check1">
+                            <label for="name" class="form__label">Check in</label>
+                            <input type="datetime-local" class="form__input" placeholder="DD YY YYYY"  id="meeting-time"
+                            name="meeting-time" value="2020-04-24T19:30"
+                            min="2020-24-07T00:00" max="2030-06-14T00:00">
+                        </div>
+
+                        <div class="check2">
+                            <label for="name" class="form__label">Check Out</label>
+                            <input type="datetime-local" class="form__input" placeholder="DD YY YYYY"  id="meeting-time"
+                            name="meeting-time" value="2020-04-24T19:30"
+                            min="2020-24-07T00:00" max="2030-06-14T00:00">
+                        </div>
+                        <div class="form__group">
+                            <div class="group1">
+                                <label for="name" class="form__label">Adults</label>
+                                <select name="find-us" id= "find-us">
+                                    <option value= "Adults" aria-controls=""selected>1</option>
+                                    <option value= "ad" >2</option>
+                                    <option other= "ad" >3</option>
+                                    <option other= "ad" >4</option>
+                                    <option other= "ad" >5</option>
+                                    <option other= "ad" >6</option>
+                                    <option other= "ad" >7</option>
+                                </select>
+                            </div>
+                            <div class="group2">
+                                <label for="name" class="form__label">Kids</label>
+                                <select name="find-us" id= "find-us">
+                                    <option value= "Kids" aria-controls=""selected>0</option>
+                                    <option value="ad">1</option>
+                                    <option value= "ad" >2</option>
+                                    <option other= "ad" >3</option>
+                                    <option other= "ad" >4</option>
+                                    <option other= "ad" >5</option>
+                                    <option other= "ad" >6</option>
+                                    <option other= "ad" >7</option>
+                                </select>
+                            </div>
+                            </div>
+                        <div class="search-btn">
+                            <button class="btn btn-black">Search</button>
+                        </div>
+                    </form>  
+                </div> 
+                <div class="dots">
+                    <ul class="ul-dots">
+                        <li class="#"><a href="#" class="btn-circle"> </a></li>
+                        <li class="#"><a href="#" class="btn-circle"> </a></li>
+                        <li class="#"><a href="#" class="btn-circle"> </a></li>
+                    </ul>
+                </div>  
+            </session>
+            <section class="about-us">
+                    <h2>TranSky</h2>
+                    <p>We are the best travel agency in the world providing excellent service since 1985,
+                        We have been working and collaborating with the Major Hotel ans Resort facility all over the world.
+                        Now we provide new tours to Antarctica with a new cruise.Royal 
+                        Caribbean® takes you to more unforgettable shores, from bucket list-worthy
+                         spots to game-changing 
+                        private destinations. All on the best cruise ships in the world.
+                    </p>
+                </section>
+                <section class="awards">
+                    <div class="awards-txt">
+                       <svg class="icon-box-c">
+                           <use xlink:href="/img/sprite.svg#icon-medal"></use>
+                       </svg>
+                       <h4> Best Cruise</h4>
+                       <p>We increase facility and sport activities in our cruise to make you fell better than ever.</p>
+
+                    </div>
+                    <div class="awards-txt">
+                       <svg class="icon-box-c">
+                           <use xlink:href="img/sprite.svg#icon-trophy1"></use>
+                       </svg>
+                       <h4>Top Destinations</h4>
+                       <p>2019 award winning categories best destinations and competitive price in the market.</p>
+
+                   </div>
+                   <div class="awards-txt">
+                       <svg class="icon-box-c">
+                           <use xlink:href="/img/sprite.svg#icon-award"></use>
+                       </svg>
+                       <h4>Best Accommodations</h4>
+                       <p>In 2020 we continue to improve and expand to new and excited destinations.</p>
+
+                   </div>
+                </section>
+                <section class="cruise">
+                    <div class="cruise-txt">
+                       <h2>CRUISE HOLIDAYS MADE FOR YOU</h2>
+                       <p> Make every moment memorable and Explore the beauty of the beautiful
+                           World. All on the best cruise ships in the world.</p>
+                    </div>
+                    <div class="cruise-img-1">
+                        <p>Sailing from Uk</p>
+                       <h2>Brazil</hh2>
+                    </div>
+                    <div class="cruise-img-2">
+                           <p>Cruise europe onboard</p>
+                           <h2>Queen Elizabeth</h2>
+                   </div>
+                   <div class="cruise-img-3">
+                           <p>sailing from europe</p>
+                           <h2>to India</h2>
+                   </div>
+                   <div class="cruise-img-4">
+                           <p>discoverer</p>
+                           <h2>Caribbean</h2>
+                   </div> 
+                </section>
+                <section class="footer">
+                   <nav class="nav-down1">
+                       <p>Home</p>
+                       <li><a>Discover</a></li>
+                       <li><a>Sitemap</a></li>
+                       <li><a>Terms & </br>Conditions</a></li>
+                       <li><a>&nbsp;</a></li>
+                       <li><a>&nbsp;</a></li>
+                       <li><a>&nbsp;</a></li>
+                   </nav>
+                   <nav class="nav-down2">
+                       <p>Destinations</p>
+                       <li><a>Europe</a></li>
+                       <li><a>America</a></li>
+                       <li><a>Australia</a></li>
+                       <li><a>Australia</a></li>
+                       <li><a>Africa</a></li>
+                       <li><a>Asia</a></li>
+                   </nav>
+                   <nav class="nav-down2">
+                       <p>Media</p>
+                       <li><a>Advertising</a></li>
+                       <li><a>Events</a></li>
+                       <li><a>News</a></li>
+                       <li><a>&nbsp;</a></li>
+                       <li><a>&nbsp;</a></li>
+                       <li><a>&nbsp;</a></li>
+                   </nav>
+                   <nav class="nav-down3">
+                       <p>Contact</p>
+                       <li><a>Email</a></li>
+                       <li><a>Call Us</a></li>
+                       <li><a>Work with Us</a></li>
+                       <li><a>&nbsp;</a></li>
+                       <li><a>&nbsp;</a></li>
+                       <li><a>&nbsp;</a></li>
+                   </nav>
+                   <nav class="nav-down4">
+                       <p>Our Team</p>
+                       <li><a>Office</a></li>
+                       <li><a>Location</a></li>
+                       <li><a>Carrier</a></li>
+                       <li><a>&nbsp;</a></li>
+                       <li><a>&nbsp;</a></li>
+                       <li><a>&nbsp;</a></li>
+                   </nav>
+                </section>
+                <section class="footer-social">
+                    <div class="icons-area">
+                       <svg class="icon-box-x">
+                           <use xlink:href="/img/sprite.svg#icon-facebook111"></use>
+                       </svg>
+                       <svg class="icon-box-x">
+                           <use xlink:href="/img/sprite.svg#icon-linkedin"></use>
+                       </svg>
+                       <svg class="icon-box-x">
+                           <use xlink:href="/img/sprite.svg#icon-twitter"></use>
+                       </svg>
+                       <svg class="icon-box-x">
+                           <use xlink:href="/img/sprite.svg#icon-youtube"></use>
+                       </svg>
+                   </div>
+                   <div class="copy">
+                           <p>Copyright &copy; 2020 by Dario Amade. All rights reserved.</p>
+                   </div>
+
+                </section>
+
+
+
+
+
+
+
+            <!--<header class="header" id="sticky">
                 <div class="nav-top">
                     <div class="logo">
                         <img src="/img/logo5.png" alt="logo of the TranSky" class="logo-size">
@@ -344,7 +677,7 @@
 
                  </section>
 
-            </div>
+            </div> -->
         </div>
         <!--<script src="script.js">autocomplete(document.getElementById("myInput"), countries);</script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js" integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw=" crossorigin="anonymous"></script>
